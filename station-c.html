@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#3A6B35">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="童軍闖關">
+  <title>C關：跳邊判斷 · 童軍定向</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="station-header">
+    <div class="container">
+      <a href="index.html" class="back-btn" aria-label="返回首頁">← 返回</a>
+      <div class="station-title-group">
+        <span class="station-badge">C 關</span>
+        <h1>跳邊判斷</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="content-cards">
+
+        <!-- 準備 -->
+        <section class="content-card" id="prep">
+          <div class="card-header">
+            <span class="card-icon">🎒</span>
+            <h2>準備</h2>
+          </div>
+          <div class="card-body">
+            <ul class="prep-list">
+              <li>一條線（繩子 / 地上畫線皆可）</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 關卡教學 -->
+        <section class="content-card" id="teaching">
+          <div class="card-header">
+            <span class="card-icon">🎮</span>
+            <h2>關卡教學</h2>
+          </div>
+          <div class="card-body">
+
+            <div class="teaching-block">
+              <h3>開場白</h3>
+              <blockquote class="spiel">「右邊是對，左邊是錯！聽完題目跳邊！」</blockquote>
+            </div>
+
+            <hr class="topic-divider">
+
+            <div class="teaching-block">
+              <h3>玩法</h3>
+              <ol class="gameplay-steps">
+                <li>關主出題</li>
+                <li>小朋友判斷對錯，跳到對應那一側</li>
+              </ol>
+            </div>
+
+            <hr class="topic-divider">
+
+            <div class="teaching-block">
+              <h3>🔥 題目列表</h3>
+              <ul class="key-list">
+                <li>太陽從西邊升起 &nbsp;❌</li>
+                <li>面北，右手邊是東 &nbsp;⭕</li>
+                <li>180° 是北方 &nbsp;❌</li>
+                <li>指北針紅色那端指北 &nbsp;⭕</li>
+                <li>磁鐵會影響指北針 &nbsp;⭕</li>
+              </ul>
+            </div>
+
+            <hr class="topic-divider">
+
+            <div class="teaching-block">
+              <h3>引導問題</h3>
+              <ul class="guidance-list">
+                <li>「為什麼？」</li>
+              </ul>
+            </div>
+
+            <div class="pass-condition" role="button" tabindex="0" aria-label="點擊標記過關">
+              <span class="pass-icon">✅</span>
+              <div class="pass-text">
+                <strong>過關條件</strong>
+                <p>答對 3 題</p>
+              </div>
+              <span class="pass-done-label">完成！</span>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="station-footer">
+    <a href="index.html" class="back-btn">← 返回首頁</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
