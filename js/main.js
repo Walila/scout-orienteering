@@ -15,10 +15,13 @@
   // ── Question tracking (station-c) ───────────────────────────
   var statusBar   = document.getElementById('q-status-bar');
   var countEl     = document.getElementById('q-asked-count');
+  var totalEl     = document.getElementById('q-total-count');
   var resetBtn    = document.getElementById('q-reset-btn');
   var qItems      = document.querySelectorAll('.q-item');
   var askedCount  = 0;
-  var totalQ      = qItems.length;
+
+  // Sync total count display with actual number of questions in DOM
+  if (totalEl && qItems.length > 0) totalEl.textContent = qItems.length;
 
   function updateStatus() {
     if (!statusBar) return;

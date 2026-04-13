@@ -76,14 +76,14 @@
             <!-- 題目列表 -->
             <div class="teaching-block is-open" id="question-block">
               <button class="block-toggle" aria-expanded="true">
-                <span class="block-title">🔥 題目列表（共 34 題）</span>
+                <span class="block-title">🔥 題目列表（共 <span id="q-total-count">50</span> 題）</span>
                 <span class="block-chevron">▼</span>
               </button>
               <div class="block-body">
 
-                <!-- 🟢 基礎題 -->
+                <!-- 🟢 基礎題：生活感＋月亮 -->
                 <div class="q-group">
-                  <h4 class="q-group-title">🟢 基礎題（低年級適用）</h4>
+                  <h4 class="q-group-title">🟢 基礎題（生活感＋月亮🌙）</h4>
                   <ul class="question-list" role="list">
                     <li class="q-item" role="listitem" tabindex="0">
                       <span class="q-text">太陽從東邊升起</span>
@@ -98,6 +98,22 @@
                       <span class="q-ans">❌</span>
                     </li>
                     <li class="q-item" role="listitem" tabindex="0">
+                      <span class="q-text">月亮有時候會從東邊升起</span>
+                      <span class="q-ans">⭕</span>
+                    </li>
+                    <li class="q-item" role="listitem" tabindex="0">
+                      <span class="q-text">月亮每天都固定在同一方向</span>
+                      <span class="q-ans">❌</span>
+                    </li>
+                    <li class="q-item" role="listitem" tabindex="0">
+                      <span class="q-text">白天比較容易看到太陽</span>
+                      <span class="q-ans">⭕</span>
+                    </li>
+                    <li class="q-item" role="listitem" tabindex="0">
+                      <span class="q-text">晚上一定看得到月亮</span>
+                      <span class="q-ans">❌</span>
+                    </li>
+                    <li class="q-item" role="listitem" tabindex="0">
                       <span class="q-text">面向北，右邊是東</span>
                       <span class="q-ans">⭕</span>
                     </li>
@@ -109,6 +125,13 @@
                       <span class="q-text">面向北，後面是南</span>
                       <span class="q-ans">⭕</span>
                     </li>
+                  </ul>
+                </div>
+
+                <!-- 🟢 基礎題：方向關係 -->
+                <div class="q-group">
+                  <h4 class="q-group-title">🟢 基礎題（方向關係）</h4>
+                  <ul class="question-list" role="list">
                     <li class="q-item" role="listitem" tabindex="0">
                       <span class="q-text">北的對面是南</span>
                       <span class="q-ans">⭕</span>
@@ -125,12 +148,28 @@
                       <span class="q-text">西在東的左邊</span>
                       <span class="q-ans">⭕</span>
                     </li>
+                    <li class="q-item" role="listitem" tabindex="0">
+                      <span class="q-text">東在南的左邊</span>
+                      <span class="q-ans">⭕</span>
+                    </li>
+                    <li class="q-item" role="listitem" tabindex="0">
+                      <span class="q-text">北在東的左邊</span>
+                      <span class="q-ans">⭕</span>
+                    </li>
+                    <li class="q-item" role="listitem" tabindex="0">
+                      <span class="q-text">南在西的左邊</span>
+                      <span class="q-ans">⭕</span>
+                    </li>
+                    <li class="q-item" role="listitem" tabindex="0">
+                      <span class="q-text">西在北的右邊</span>
+                      <span class="q-ans">❌</span>
+                    </li>
                   </ul>
                 </div>
 
                 <!-- 🟡 中階題 -->
                 <div class="q-group">
-                  <h4 class="q-group-title">🟡 中階題（方向＋斜角）</h4>
+                  <h4 class="q-group-title">🟡 中階題（斜角方向）</h4>
                   <ul class="question-list" role="list">
                     <li class="q-item" role="listitem" tabindex="0">
                       <span class="q-text">東北在東和北之間</span>
@@ -195,6 +234,14 @@
                       <span class="q-text">指北針永遠不會錯</span>
                       <span class="q-ans">❌</span>
                     </li>
+                    <li class="q-item" role="listitem" tabindex="0">
+                      <span class="q-text">指北針會自己轉動是因為地球</span>
+                      <span class="q-ans">⭕</span>
+                    </li>
+                    <li class="q-item" role="listitem" tabindex="0">
+                      <span class="q-text">指北針只在戶外才能用</span>
+                      <span class="q-ans">❌</span>
+                    </li>
                   </ul>
                 </div>
 
@@ -223,17 +270,32 @@
                       <span class="q-ans">⭕</span>
                     </li>
                     <li class="q-item" role="listitem" tabindex="0">
-                      <span class="q-text">西南是 135°</span>
-                      <span class="q-ans">❌<span class="q-note">應該是 225°</span></span>
+                      <span class="q-text">東南是 135°</span>
+                      <span class="q-ans">⭕</span>
+                    </li>
+                    <li class="q-item" role="listitem" tabindex="0">
+                      <span class="q-text">西南是 225°</span>
+                      <span class="q-ans">⭕</span>
                     </li>
                     <li class="q-item" role="listitem" tabindex="0">
                       <span class="q-text">西北是 315°</span>
                       <span class="q-ans">⭕</span>
                     </li>
                     <li class="q-item" role="listitem" tabindex="0">
-                      <span class="q-text">360° 是東</span>
+                      <span class="q-text">360° 也是北</span>
+                      <span class="q-ans">⭕</span>
+                    </li>
+                    <li class="q-item" role="listitem" tabindex="0">
+                      <span class="q-text">180° 是東</span>
                       <span class="q-ans">❌</span>
                     </li>
+                  </ul>
+                </div>
+
+                <!-- 🟣 方向轉換題 -->
+                <div class="q-group">
+                  <h4 class="q-group-title">🟣 方向轉換題（面向改變🔥）</h4>
+                  <ul class="question-list" role="list">
                     <li class="q-item" role="listitem" tabindex="0">
                       <span class="q-text">面向東，右邊是南</span>
                       <span class="q-ans">⭕</span>
@@ -251,18 +313,18 @@
                       <span class="q-ans">❌</span>
                     </li>
                     <li class="q-item" role="listitem" tabindex="0">
-                      <span class="q-text">東南在西北的對面</span>
+                      <span class="q-text">面向東，左邊是北</span>
                       <span class="q-ans">⭕</span>
                     </li>
                     <li class="q-item" role="listitem" tabindex="0">
-                      <span class="q-text">東北和西南是對面</span>
+                      <span class="q-text">面向南，左邊是東</span>
                       <span class="q-ans">⭕</span>
                     </li>
                   </ul>
                 </div>
 
               </div><!-- /.block-body -->
-            </div><!-- /.teaching-block -->
+            </div><!-- /#question-block -->
 
             <div class="teaching-block is-open">
               <button class="block-toggle" aria-expanded="true">
@@ -274,15 +336,6 @@
                   <li>「為什麼？」</li>
                 </ul>
               </div>
-            </div>
-
-            <div class="pass-condition" role="button" tabindex="0" aria-label="點擊標記過關">
-              <span class="pass-icon">✅</span>
-              <div class="pass-text">
-                <strong>過關條件</strong>
-                <p>答對 3 題</p>
-              </div>
-              <span class="pass-done-label">完成！</span>
             </div>
 
           </div>
@@ -298,7 +351,7 @@
 
   <!-- Floating status bar -->
   <div class="q-status-bar" id="q-status-bar" aria-live="polite">
-    <span class="q-count">已問 <strong id="q-asked-count">0</strong> / 34 題</span>
+    <span class="q-count">已問 <strong id="q-asked-count">0</strong> / <span id="q-total-count">50</span> 題</span>
     <button class="q-reset-btn" id="q-reset-btn" type="button">🔄 重設</button>
   </div>
 
