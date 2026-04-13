@@ -906,6 +906,96 @@ h3 {
 
 
 /* ============================================================
+   Activity Flow Card — Homepage
+   ============================================================ */
+.flow-card {
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-left: 5px solid var(--color-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md) var(--space-lg);
+  margin-bottom: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.flow-card-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  font-weight: 900;
+  color: var(--color-heading);
+  margin-bottom: var(--space-sm);
+}
+
+.flow-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.flow-list li {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text);
+  padding-left: 1.1em;
+  position: relative;
+  margin: 0;
+}
+
+.flow-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 900;
+}
+
+.flow-note {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--color-primary);
+  margin: 0;
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-surface-deep);
+}
+
+/* ============================================================
+   Rhythm Reminder — Station Pages
+   ============================================================ */
+.rhythm-reminder {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+  background: var(--color-surface-deep);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-heading);
+}
+
+.rhythm-icon {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+.rhythm-lines p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.rhythm-lines p + p { margin-top: 0.25em; }
+
+/* ============================================================
    Question List (station-c)
    ============================================================ */
 
@@ -966,11 +1056,10 @@ h3 {
 .q-text { flex: 1; line-height: 1.4; }
 
 .q-note {
-  display: block;
-  font-size: 0.8rem;
+  display: inline;
+  font-size: 0.875em;
   font-style: italic;
   color: var(--color-border);
-  margin-top: 0.15em;
   font-weight: 500;
   text-decoration: none !important;
 }
