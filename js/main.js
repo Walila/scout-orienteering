@@ -3,12 +3,38 @@
 
   // ── Accordion: teaching blocks ──────────────────────────────
   var toggles = document.querySelectorAll('.block-toggle');
+
+  function syncBlockHeight(block) {
+    var body = block.querySelector('.block-body');
+    if (!body) return;
+    body.style.maxHeight = block.classList.contains('is-open')
+      ? body.scrollHeight + 'px'
+      : '0px';
+  }
+
+  document.querySelectorAll('.teaching-block').forEach(function (block) {
+    syncBlockHeight(block);
+  });
+
   toggles.forEach(function (toggle) {
     toggle.addEventListener('click', function () {
       var block = this.closest('.teaching-block');
       var opening = !block.classList.contains('is-open');
       block.classList.toggle('is-open');
       this.setAttribute('aria-expanded', opening ? 'true' : 'false');
+      syncBlockHeight(block);
+    });
+  });
+
+  window.addEventListener('load', function () {
+    document.querySelectorAll('.teaching-block').forEach(function (block) {
+      syncBlockHeight(block);
+    });
+  });
+
+  window.addEventListener('resize', function () {
+    document.querySelectorAll('.teaching-block').forEach(function (block) {
+      syncBlockHeight(block);
     });
   });
 
@@ -16,12 +42,16 @@
   var statusBar   = document.getElementById('q-status-bar');
   var countEl     = document.getElementById('q-asked-count');
   var totalEl     = document.getElementById('q-total-count');
+  var totalFooterEl = document.getElementById('q-total-count-footer');
   var resetBtn    = document.getElementById('q-reset-btn');
   var qItems      = document.querySelectorAll('.q-item');
   var askedCount  = 0;
 
   // Sync total count display with actual number of questions in DOM
-  if (totalEl && qItems.length > 0) totalEl.textContent = qItems.length;
+  if (qItems.length > 0) {
+    if (totalEl) totalEl.textContent = qItems.length;
+    if (totalFooterEl) totalFooterEl.textContent = qItems.length;
+  }
 
   function updateStatus() {
     if (!statusBar) return;
