@@ -97,38 +97,76 @@
                 <span class="block-chevron">▼</span>
               </button>
               <div class="block-body">
-                <h4 style="margin:0 0 0.4em 0; font-size:0.95rem; color:var(--color-primary);">① 地圖 A（簡單版）</h4>
-                <ul style="margin:0 0 1em 0; list-style:none; padding:0; display:flex; flex-direction:column; gap:0.3em;">
-                  <li>👉 給一張「簡單地圖」（例如：捷運站、游泳池）</li>
-                  <li>👉 地圖方向是亂的</li>
-                  <li>👉 請小朋友把地圖轉正（對齊北）</li>
-                  <li style="color:var(--color-text-muted); font-style:italic;">👉 這一步只是讓大家理解「轉正」的概念</li>
-                </ul>
-
-                <h4 style="margin:0 0 0.4em 0; font-size:0.95rem; color:var(--color-primary);">② 地圖 B（進階版）</h4>
-                <ul style="margin:0 0 1em 0; list-style:none; padding:0; display:flex; flex-direction:column; gap:0.3em;">
-                  <li>👉 換一張比較完整的地圖（像實際地圖）</li>
-                  <li>👉 一樣要轉正</li>
-                  <li>👉 轉正後開始問：
-                    <ul style="margin-top:0.4em; list-style:disc; padding-left:1.5em;">
-                      <li>「這個在哪？」</li>
-                      <li>「哪個在北？」</li>
-                      <li>「這個在你哪邊？」</li>
+                <ol class="gameplay-steps">
+                  <li>
+                    大範圍地圖（先給這張）
+                    <ul style="margin-top:0.35em; list-style:none; padding:0; display:flex; flex-direction:column; gap:0.25em;">
+                      <li>👉 地圖方向是亂的，請小朋友把地圖轉正</li>
+                      <li style="color:var(--color-text-muted); font-style:italic;">（讓地圖上的北，對齊地上的北）</li>
+                      <li>👉 轉正後問：「這個在哪邊？」「在你左邊還是右邊？」</li>
                     </ul>
                   </li>
-                </ul>
-
-                <h4 style="margin:0 0 0.4em 0; font-size:0.95rem; color:var(--color-primary);">③ 人體地圖（加強理解）</h4>
-                <ul style="margin:0; list-style:none; padding:0; display:flex; flex-direction:column; gap:0.3em;">
-                  <li>👉 把人當成地圖上的物件</li>
-                  <li>例如：
-                    <ul style="margin-top:0.4em; list-style:disc; padding-left:1.5em;">
-                      <li>「你現在是游泳池，請站到我左邊 5 步」</li>
-                      <li>「你是捷運站，要站在哪裡？」</li>
+                  <li>
+                    小範圍地圖（換這張）
+                    <ul style="margin-top:0.35em; list-style:none; padding:0; display:flex; flex-direction:column; gap:0.25em;">
+                      <li>👉 一樣轉正</li>
+                      <li>👉 繼續問：「這個在哪？」「哪個在你北邊？」</li>
                     </ul>
                   </li>
-                  <li>👉 再問：「他在你哪邊？」</li>
-                </ul>
+                  <li>
+                    人體地圖
+                    <ul style="margin-top:0.35em; list-style:none; padding:0; display:flex; flex-direction:column; gap:0.25em;">
+                      <li>👉 拿已轉正的地圖，指一個地物</li>
+                      <li>👉 問：「這個在哪個方向？誰去站過去？」</li>
+                      <li>👉 等小朋友走到對應位置</li>
+                      <li>👉 再問其他人：「他站的地方，在你哪邊？」</li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="teaching-block is-open">
+              <button class="block-toggle" aria-expanded="true">
+                <span class="block-title">🗂️ 題目參考</span>
+                <span class="block-chevron">▼</span>
+              </button>
+              <div class="block-body">
+
+                <div class="q-group">
+                  <h4 class="q-group-title">🟢 轉正基礎</h4>
+                  <ul class="question-list" role="list">
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">地圖上的北在哪邊？</span></li>
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">現在北在哪裡？你怎麼知道？</span></li>
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">地圖要往哪邊轉？</span></li>
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">轉好了嗎？你怎麼確認？</span></li>
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">地圖的北和地上的北，有對齊嗎？</span></li>
+                  </ul>
+                </div>
+
+                <div class="q-group">
+                  <h4 class="q-group-title">🟡 地物位置</h4>
+                  <ul class="question-list" role="list">
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">這個地方在你的哪邊？</span></li>
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">哪個比較靠北？</span></li>
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">這個在東邊還是西邊？</span></li>
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">從你站的地方往北走，會碰到什麼？</span></li>
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">這兩個，誰比較靠南？</span></li>
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">這個在地圖上的哪裡？</span></li>
+                  </ul>
+                </div>
+
+                <div class="q-group">
+                  <h4 class="q-group-title">🔵 人體地圖</h4>
+                  <ul class="question-list" role="list">
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">這個在哪個方向？誰去站過去？</span></li>
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">他站的地方，在你哪邊？</span></li>
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">從你這裡看，哪個方向有什麼？</span></li>
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">你們兩個，誰比較靠北？</span></li>
+                    <li class="q-item" role="listitem" tabindex="0"><span class="q-text">他要往哪邊走，才能到那裡？</span></li>
+                  </ul>
+                </div>
+
               </div>
             </div>
 
